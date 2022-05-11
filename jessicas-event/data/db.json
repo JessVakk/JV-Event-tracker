@@ -1,0 +1,12 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "Födelsedagskalas",
+            "description": "Fira fabian 4 år",
+            "place": "Kalasgatan 54",
+            "date": "25/8",
+            "time": "13.00"
+        }
+    ]
+}
