@@ -1,11 +1,16 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import EventView from './EventView'
+import AddNewEvent from './AddNewEvent'
+import HomeView from './HomeView'
+
+
 
 const Views = () => {
   return (
     <Routes>
-        <Route path='/' element={ <EventView />} />
+        <Route path='/' element={ <HomeView />} />
+        <Route path='/' element={ <AddNewEvent /> } />
+        
     </Routes>
   )
 }

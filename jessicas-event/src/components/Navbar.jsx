@@ -10,7 +10,7 @@ const Navbar = () => {
             <ul className="nav-links list-unstyled d-flex align-item-center">
                 { isAuth
                 ?(<>
-                <li><NavLink to="/" className="nav-Link text-white">My Events</NavLink></li>
+                <li><NavLink to="/" className="nav-Link text-white">Logout</NavLink></li>
                 </>)
                 :<li><NavLink to="/Login" className="nav-Link text-white">Login</NavLink></li>
                 }

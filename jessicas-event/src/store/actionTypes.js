@@ -1,14 +1,11 @@
 const actionTypes = () => {
     return {
-        auth: {},
-        posts: {
-            setPosts: 'SET_POSTS',
-            loading: 'LOADING'
-        },
-        
-       
-        
+       auth: {},
+       events: {
+           setEvents: 'SET_EVENTS',
+           loading: 'LOADING'
+       }
     }
-
-}
-export default actionTypes;
+   }
+   
+   export default actionTypes;
