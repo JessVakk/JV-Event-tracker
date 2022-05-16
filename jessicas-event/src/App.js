@@ -1,15 +1,13 @@
 import './App.css';
-
 import Navbar from './components/Navbar';
-import Views from './views/Views';
+import Views from './views/Views'
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Navbar />
       <div className="container">
-      <Views />
-     
+        <Views />
        </div>
     </div>
   );

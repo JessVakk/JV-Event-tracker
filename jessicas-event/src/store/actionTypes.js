@@ -1,11 +1,11 @@
-const actionTypes = () => {
+const actiontypes = () => {
     return {
-       auth: {},
-       events: {
-           setEvents: 'SET_EVENTS',
-           loading: 'LOADING'
-       }
+        auth: {},
+        events: {
+            setEvents: 'SET_EVENTS',
+            loading: 'LOADING'
+        }
     }
-   }
-   
-   export default actionTypes;
+}
+
+export default actiontypes;

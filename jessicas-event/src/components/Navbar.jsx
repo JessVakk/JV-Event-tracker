@@ -8,10 +8,9 @@ const Navbar = () => {
         <div className="container d-flex justify-content-space-between align-items-center">
             <Link to="/" className='navbar-brand text-white text-decoration-none' >Event Tracker</Link>
             <ul className="nav-links list-unstyled d-flex align-item-center">
+                <li><NavLink to='/' >Add Events</NavLink></li>
                 { isAuth
-                ?(<>
-                <li><NavLink to="/" className="nav-Link text-white">Logout</NavLink></li>
-                </>)
+                ?<li><NavLink to="/AddEvent" className="nav-Link text-white">Add Event</NavLink></li>
                 :<li><NavLink to="/Login" className="nav-Link text-white">Login</NavLink></li>
                 }
             </ul>
