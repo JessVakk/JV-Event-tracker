@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getEventById } from '../store/actions/singleEventActions'
+import { clearEvent, getEventById } from '../store/actions/singleEventActions'
 import { useParams } from 'react-router-dom'
 
 const SingleEventView = () => {
@@ -10,12 +10,17 @@ const SingleEventView = () => {
 
     useEffect(() => {
         dispatch(getEventById(id))
+
+        return () => {
+          dispatch(clearEvent())
+          
+        }
     
-    }, [dispatch, id])
+    }, [])
 
     const { loading, data: event, error} = useSelector(state => state.event)
     
-    const template = (
+    const template = ( event &&
       <div>
         <h2>{event.title}</h2>
         <p>{event.description}</p>
@@ -23,7 +28,13 @@ const SingleEventView = () => {
         <p>{event.date}</p>
         <p>{event.time}</p>
       </div>
+    )
 
+    if(error)
+    return (
+      <div>
+        <p>{error}</p>
+      </div>
     )
 
   return (

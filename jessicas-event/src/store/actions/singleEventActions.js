@@ -34,3 +34,8 @@ const loadEventFailure = (err) => {
         payload: err
     }
 }
+export const clearEvent = () => {
+    return {
+        type: actiontypes().event.clearEvent
+    }
+}

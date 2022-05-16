@@ -30,6 +30,12 @@ const singleEventReducer = (state = initState, action) => {
                 loading: false,
                 error: action.payload
             }
+        
+        case actiontypes().event.clearEvent:
+            return {
+                ...state,
+                data: null,
+            }
 
         default:
         return state

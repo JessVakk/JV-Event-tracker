@@ -9,7 +9,8 @@ const actiontypes = () => {
         event: {
             loadEvent: 'LOAD_EVENT',
             loadEventSuccess: 'LOAD_EVENT_SUCCESS',
-            loadEventFailure: 'LOAD_EVENT_FAILURE'
+            loadEventFailure: 'LOAD_EVENT_FAILURE',
+            clearEvent: 'CLEAR_POST'
         }
     }
 }

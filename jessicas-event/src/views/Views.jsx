@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import AddEventView from './AddEventView'
 import EventsView from './EventsView'
 import SingleEventView from './SingleEventView'
 
@@ -8,6 +9,8 @@ const Views = () => {
     <Routes>
         <Route path='/' element = { <EventsView /> } />
         <Route path='/events/:id' element = { <SingleEventView /> } />
+        <Route path='/add' element = { <AddEventView /> } />
+        
     </Routes>
   )
 }
