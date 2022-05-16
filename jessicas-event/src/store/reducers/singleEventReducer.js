@@ -14,6 +14,22 @@ const singleEventReducer = (state = initState, action) => {
                 ...state,
                 loading: true
             }
+        
+        case actiontypes().event.loadEventSuccess:
+            return {
+                ...state,
+                data: action.payload,
+                loading: false,
+                error: null
+            }
+
+        case actiontypes().event.loadEventFailure:
+            return {
+                ...state,
+                data: null,
+                loading: false,
+                error: action.payload
+            }
 
         default:
         return state
