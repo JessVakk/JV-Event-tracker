@@ -22,3 +22,10 @@ const setEvents = (events) => {
         payload: events
     }
 }
+
+const eventsFailure = (payload) => {
+    return {
+        type: actiontypes().events.failure,
+        payload
+    }
+}
