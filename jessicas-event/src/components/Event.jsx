@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 const Event = ({ event }) => {
   return (
-    <div className="event">
-        <Link to={`/events/${event.id}`}>
-            <h2>{event.title}</h2>
+    <div className=" event mt-5 d-flex justify-content-center align-item-center text-center">
+        <Link to={`/events/${event.id}`} className=" ">
+            <h2 className="mt-5 ">{event.title}</h2>
            
         </Link>
     </div>
