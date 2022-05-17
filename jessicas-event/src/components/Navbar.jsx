@@ -2,10 +2,10 @@ import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
-    const [isAuth, setIsAuth] = useState(true)
+    const [isAuth] = useState(true)
 
   return (
-    <nav className="navbar bg-info py-1">
+    <nav className="navbar  gradient-color py-1">
         <div className="container">
             <Link to="/" className=' text-white text-decoration-none' >Event Tracker</Link>
             
@@ -20,5 +20,6 @@ const Navbar = () => {
       </nav>
   )
 }
+
 
 export default Navbar

@@ -16,7 +16,7 @@ const SingleEventView = () => {
           
         }
     
-    }, [])
+    }, [dispatch, id])
 
     const { loading, data: event, error} = useSelector(state => state.event)
     

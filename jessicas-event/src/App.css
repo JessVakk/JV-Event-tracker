@@ -1,14 +1,14 @@
 .event {
-    box-shadow: 5px 5px 5px #6b6a6a82;
-    border-radius: 1rem;
-    
-    text-decoration: none;
-    color: #333;
-  }
+  box-shadow: 5px 5px 5px #6b6a6a82;
+  border-radius: 1rem;
+  
+  text-decoration: none;
+  color: #333;
+}
 
-  .gradient-btn {
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgb(119, 137, 183, 1), rgb(14, 65, 49, 1));
-      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgb(119, 137, 183, 1), rgb(14, 65, 49, 1));
-    }
+.gradient-color {
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgb(119, 137, 183, 1), rgb(14, 65, 49, 1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgb(119, 137, 183, 1), rgb(14, 65, 49, 1));
+  }
