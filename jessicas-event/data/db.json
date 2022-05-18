@@ -1,20 +1,28 @@
 {
-    "events": [
-        {
-            "id": 1,
-            "title": "Födelsedagskalas",
-            "description": "Fira fabian 4 år",
-            "place": "Kalasgatan 54",
-            "date": "25/8",
-            "time": "13.00"
-        },
-        {
-            "id": 2,
-            "title": "Bio",
-            "description": "Se Jurassic World",
-            "place": "Filmstaden Kista",
-            "date": "3/6",
-            "time": "18.00"
-        }
-    ]
+  "events": [
+    {
+      "id": 1,
+      "title": "Födelsedagskalas",
+      "description": "Fira fabian 4 år",
+      "place": "Kalasgatan 54",
+      "date": "25/8",
+      "time": "13.00"
+    },
+    {
+      "id": 2,
+      "title": "Bio",
+      "description": "Se Jurassic World",
+      "place": "Filmstaden Kista",
+      "date": "3/6",
+      "time": "18.00"
+    },
+    {
+      "title": "test",
+      "description": "te",
+      "place": "",
+      "date": "2022-05-06",
+      "time": "09:15",
+      "id": 3
+    }
+  ]
 }

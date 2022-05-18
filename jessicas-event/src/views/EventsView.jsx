@@ -1,5 +1,5 @@
 
-import {useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import Event from '../components/Event'
 
 
@@ -8,7 +8,6 @@ const EventsView = () => {
     
     const { data: events, loading } = useSelector(state => state.events)
 
-   
   return (
     <div>
       

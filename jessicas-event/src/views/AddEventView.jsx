@@ -25,11 +25,12 @@ const AddEventView = () => {
     setFormData(state => ({
       ...state,
       [e.target.name]: e.target.value
+      
     }))
   }
 
-  const handleSubmit =  e => {
-    e.preventDeafult()
+  const handleSubmit = e => {
+    e.preventDefault()
 
     dispatch(addEvent(formData))
     setEventAdded(true)
@@ -60,7 +61,7 @@ const AddEventView = () => {
               </div>
               <div className="col-lg-12  mb-4 pe-lg-2">
               <label htmlFor="eventDesc">Event description: </label>       
-                <textarea type="text" id='eventDesc' name='description' onChange={onChange} value={formData.description} className='form-control' />
+                <textarea type="text" id='description' name='description' onChange={onChange} value={formData.description} className='form-control' />
               </div>
               
            
@@ -70,9 +71,9 @@ const AddEventView = () => {
               
               </div>
             </form>
+          
             
         </div>
-
         
   )
 }

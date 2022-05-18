@@ -16,6 +16,7 @@ export const getEvents = () => {
 
 export const addEvent = (event) => {
     return async dispatch => {
+        console.log("test")
         dispatch(loading(true))
         try {
             const res = await axios.post('http://localhost:8080/events', event)

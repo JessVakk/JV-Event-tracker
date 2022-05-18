@@ -4,7 +4,8 @@ const actiontypes = () => {
         events: {
             setEvents: 'SET_EVENTS',
             loading: 'LOADING',
-            failure: 'EVENT_FAILURE'
+            failure: 'EVENT_FAILURE',
+            addNewItem: 'ADD_NEW_ITEM'
         },
         event: {
             loadEvent: 'LOAD_EVENT',

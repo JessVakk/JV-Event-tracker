@@ -6,7 +6,6 @@ import { useDispatch } from 'react-redux'
 import { getEvents } from './store/actions/eventsAction'
 
 
-
 function App() {
 
 const dispatch = useDispatch()
