@@ -1,20 +1,38 @@
 {
   "events": [
     {
-        "id": 1,
-        "title": "Födelsedagskalas",
-        "description": "Fira fabian 4 år",
-        "place": "Kalasgatan 54",
-        "date": "25/8",
-        "time": "13.00"
+      "id": 1,
+      "title": "Födelsedagskalas",
+      "description": "Fira fabian 4 år",
+      "place": "Kalasgatan 54",
+      "date": "25/8",
+      "time": "13.00"
     },
     {
-        "id": 2,
-        "title": "Bio",
-        "description": "Se Jurassic World",
-        "place": "Filmstaden Kista",
-        "date": "3/6",
-        "time": "18.00"
+      "id": 2,
+      "title": "Bio",
+      "description": "Se Jurassic World",
+      "place": "Filmstaden Kista",
+      "date": "3/6",
+      "time": "18.00"
+    },
+    {
+      "title": "nytt",
+      "description": "gerrhth",
+      "place": "",
+      "date": "2022-05-21",
+      "time": "12:34",
+      "id": 3
     }
-]
+  ],
+  "users": [
+    {
+      "email": "Hej@hej.se",
+      "password": "$2a$10$/wFnDH8hd5cuwB2BfoQVbe5tw0sb1YTmq7RrRiiM3hC6Zh8MueF9m",
+      "firstName": "Hej",
+      "lastName": "Hej",
+      "repeatPassword": "Hejsan",
+      "id": 1
+    }
+  ]
 }
