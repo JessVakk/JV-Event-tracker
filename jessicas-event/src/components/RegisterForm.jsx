@@ -26,6 +26,8 @@ const RegisterForm = ({setLogin}) => {
   const handleSub = e => {
     e.preventDefault()
     dispatch(registerUser(formData))
+
+    
   }
 
   return (

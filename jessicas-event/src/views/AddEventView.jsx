@@ -12,6 +12,7 @@ const AddEventView = () => {
   const loading  = useSelector(state => state.events.loading)
 
  const [eventAdded, setEventAdded] = useState(false)
+ const [error, setError] = useState(false)
 
   const [formData, setFormData] = useState({
     title: '',
@@ -31,7 +32,17 @@ const AddEventView = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
+    
+    if(formData.title.trim()==='') {
+      setError(true)
+      return
+    } else if(formData.description.trim()==='') {
+      setError(true)
+      return
+    }
+      
 
+    setError(false)
     dispatch(addEvent(formData))
     setEventAdded(true)
   }
@@ -43,6 +54,7 @@ const AddEventView = () => {
   }, [loading, eventAdded, navigate])
 
   return (
+    
           <div className='mt-5 container card py-5 rounded-7 shadow p-3 mb-5 bg-body rounded'>
           <h2  className='text-center mb-4'>Add Event</h2>
           <form onSubmit={handleSubmit} className='pe-5 ps-5 d-flex justify-content-center'>
@@ -50,6 +62,7 @@ const AddEventView = () => {
               <div className="col-lg-12 mb-4 pe-lg-2" >
               <label htmlFor="title">Title: </label>
               <input type="text" id='title' name='title' onChange={onChange} value={formData.title} className='form-control' />
+              {error && <p className='error text-danger'>You can't leave this empty</p>}
               </div> 
               <div className="col-lg-6 col-sm-12 mb-4 ps-lg-2" >
                 <label htmlFor="date">Date: </label>
@@ -62,6 +75,7 @@ const AddEventView = () => {
               <div className="col-lg-12  mb-4 pe-lg-2">
               <label htmlFor="eventDesc">Event description: </label>       
                 <textarea type="text" id='description' name='description' onChange={onChange} value={formData.description} className='form-control' />
+                {error && <p className='error text-danger'>You can't leave this empty</p>}
               </div>
               
            
@@ -74,7 +88,8 @@ const AddEventView = () => {
           
             
         </div>
-        
+         
+         
   )
 }
 

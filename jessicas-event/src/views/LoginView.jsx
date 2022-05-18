@@ -16,7 +16,7 @@ const LoginView = () => {
 
   useEffect(() => {
     if(user) {
-      // navigate(state?.from || "/")
+     
       try {navigate(state.from)} 
       catch {navigate("/")}
     }
