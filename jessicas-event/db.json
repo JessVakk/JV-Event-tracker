@@ -17,15 +17,13 @@
       "time": "18.00"
     },
     {
-      "title": "nytt",
-      "description": "gerrhth",
-      "place": "",
-      "date": "2022-05-21",
-      "time": "12:34",
+      "title": "Kommer detta in på events-sidan?",
+      "place": "Hoppas det",
+      "date": "2022-05-19",
+      "time": "12:39",
+      "description": "håller tummarna",
       "id": 3
-    }  
-  
-   
+    }
   ],
   "users": [
     {
