@@ -54,7 +54,7 @@ const RegisterForm = ({setLogin}) => {
           <div>
             <button className='mb-4 btn btn-block btn-primary gradient-color text-light'>{loading ? 'Loading...' : 'Sign up'}</button>
           </div>
-          <p className='text-center '>Already a member? <span onClick={() => setLogin(true)} className='login-link'>login here</span></p>
+          <p className='text-center '>Already a member? <span onClick={() => setLogin(true)} className='login-link'>Login here</span></p>
           </div>
         </form>
     </div>

@@ -40,7 +40,7 @@ const LoginForm = ({setLogin}) => {
           <div>
             <button className='btn mb-4 btn btn-block btn-primary gradient-color text-white'>{loading ? 'Loading...' : 'Login'}</button>
           </div>
-          <p className='text-center' >Not a member? <span className='login-link' onClick={() => setLogin(false)}>register now</span></p>
+          <p className='text-center' >Not a member? <span className='login-link' onClick={() => setLogin(false)}>Register now</span></p>
         </div>
       </form>
     </div>
