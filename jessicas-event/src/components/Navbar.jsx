@@ -13,16 +13,17 @@ const Navbar = () => {
         <div className="container">
             <Link to="/" className=' text-white text-decoration-none' >Event Tracker</Link>
             
-            <ul className=" nav-links list-unstyled d-flex align-item-center  ">
-                <li><NavLink to='/' className="nav-Link text-white pe-2"  >Events</NavLink></li>
+            <ul className=" d-flex justify-content-between align-item-center list-unstyled mt-3 ">
+              
+                <li><NavLink to='/' className=" text-white me-3 "  >Events</NavLink></li>
                 { isAuth      
                 ? (<>
-                  <li><NavLink to="/add" className="nav-link" >Add New Event</NavLink></li>
-                  <li><Link onClick={() => dispatch(logoutUser())} to="/login" className="nav-link">Logout</Link></li>
+                  <li><NavLink to="/add" className=" text-light me-3  " > Add-New-Event </NavLink></li>
+                  <li><Link onClick={() => dispatch(logoutUser())} to="/login" className=" text-light me-3  " > Logout</Link></li>
                   </>)
-                : <li><NavLink to="/login" className="nav-link" >Login</NavLink></li>
+                : <li><NavLink to="/login" className=" text-light ms-3 " >Login</NavLink></li>
                 }
-               
+              
             </ul>
            </div>
       </nav>

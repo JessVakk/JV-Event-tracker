@@ -22,4 +22,4 @@ const actiontypes = () => {
     }
 }
 
-export default actiontypes;
+export default actiontypes; 
