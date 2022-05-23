@@ -21,12 +21,14 @@ const SingleEventView = () => {
     const { loading, data: event, error} = useSelector(state => state.event)
     
     const template = ( event &&
-      <div>
-        <h2>{event.title}</h2>
-        <p>{event.description}</p>
-        <p>{event.place}</p>
-        <p>{event.date}</p>
-        <p>{event.time}</p>
+      <div className=" card container mt-5 col-3 bg-custom-color col-8">
+        <div className=''>
+          <h2 className='text-center ps-2 mt-3 mb-4 '>{event.title}</h2>
+          <p className='text-center ps-2 mt-3 mb-2' >Description: <span className='h5'>{event.description}</span></p>
+          <p className='text-center ps-2 mt-3 mb-2' >Place: <span className='h5'>{event.place}</span></p>
+          <p className='text-center ps-2 mt-3 mb-2' >Date: <span className='h5'>{event.date}</span></p>
+          <p className='text-center ps-2 mt-3 mb-5' >Time: <span className='h5'>{event.time}</span></p>
+        </div>
       </div>
     )
 
