@@ -31,7 +31,7 @@ const RegisterForm = ({setLogin}) => {
   }
 
   return (
-    <div className='container card py-5 rounded-7 shadow p-3 mb-5 bg-body rounded'>
+    <div className='container card py-5 rounded-7 shadow p-3 mt-5 bg-body rounded'>
       <h2 className='text-center mb-4'>Register</h2>
       <form className='pe-5 ps-5 d-flex justify-content-center'onSubmit={handleSub}>
         <div className="row ">
@@ -48,13 +48,13 @@ const RegisterForm = ({setLogin}) => {
             <input value={formData.password} onChange={onChange} type="password" id='password' name='password' className='form-control' placeholder='Password:' />
           </div>
           <div className="col-lg-6 col-sm-12 mb-4">
-            <input value={formData.repeatPassword} onChange={onChange} type="repeatPassword" id='repeatPassword' name='repeatPassword' className='form-control' placeholder='Repeat Password:' />
+            <input value={formData.repeatPassword} onChange={onChange} type="password" id='password' name='password' className='form-control' placeholder='Repeat Password:' />
           </div>
        
           <div>
-            <button className='mb-4 btn btn-block btn-primary gradient-custom-signUp text-body'>{loading ? 'Loading...' : 'Sign up'}</button>
+            <button className='mb-4 btn btn-block btn-primary gradient-color text-light'>{loading ? 'Loading...' : 'Sign up'}</button>
           </div>
-          <p className='text-center'>Already a member? <span onClick={() => setLogin(true)} className='link'>login here</span></p>
+          <p className='text-center '>Already a member? <span onClick={() => setLogin(true)} className='login-link'>login here</span></p>
           </div>
         </form>
     </div>

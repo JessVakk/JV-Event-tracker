@@ -15,6 +15,14 @@
       "place": "Filmstaden Kista",
       "date": "3/6",
       "time": "18.00"
+    },
+    {
+      "id": 3,
+      "title": "test",
+      "description": "trete",
+      "place": "test",
+      "date": "2022-05-17",
+      "time": "15:35"
     }
   ],
   "users": [
@@ -25,6 +33,14 @@
       "lastName": "Hej",
       "repeatPassword": "Hejsan",
       "id": 1
+    },
+    {
+      "email": "login@login.se",
+      "password": "$2a$10$QN60Panrmqje0onl1Ycn6.mE4udLyeWF0bcxf8X0PbHia7e.e5fXy",
+      "firstName": "Login",
+      "lastName": "Login",
+      "repeatPassword": "Login",
+      "id": 2
     }
   ]
 }

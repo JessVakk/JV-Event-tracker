@@ -10,5 +10,15 @@
   /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-linear-gradient(to right, rgb(119, 137, 183, 1), rgb(14, 65, 49, 1));
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgb(119, 137, 183, 1), rgb(14, 65, 49, 1));
+  background: linear-gradient(to right, rgb(119, 137, 183, 1), rgb(13, 64, 48, 1));
+  }
+
+  .login-link {
+    color: #115842 ;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .bg-custom-color{
+    background: #f4f9f7;
   }
