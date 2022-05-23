@@ -4,7 +4,7 @@ import { addEvent } from '../store/actions/eventsAction'
 import { useNavigate } from 'react-router-dom'
 
 
-function AddEventView() {
+function AddEventView({}) {
 
   const dispatch = useDispatch()
   const navigate = useNavigate()
@@ -17,7 +17,7 @@ function AddEventView() {
 
   const [formValues, setFormValues] = useState({
     id: '',
-    title: '',
+    title: '', 
     description: '',
     place: '',
     date: '',
@@ -33,18 +33,25 @@ function AddEventView() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setFormErrors(validate(formValues));
+    if(Object.keys(validate(formValues)).length > 0){
+      // setFormErrors(true)
+      return
+    }
     dispatch(addEvent(formValues));
     setEventAdded(true);
   };
 
-  useEffect(() => {
-    if (Object.keys(formErrors).length === '') {
-    }
-  }, [formErrors]);
+  // useEffect(() => {
+  //   if (Object.keys(formErrors).length === 0 ) {
+  //   }
+  // }, [formErrors]);
+
+
   const validate = (values) => {
     const errors = {};
+    
     if (!values.title) {
-      errors.title = "You must enter a title";
+      errors.title = "You must enter a title"
     } else if (values.title.length < 4) {
       errors.title = "Title must be more than 4 characters";
     }
@@ -67,7 +74,7 @@ function AddEventView() {
   };
 
   useEffect(() => {
-    if(!loading  && validate && eventAdded) {
+    if(!loading && Object.keys(formErrors).length === 0 && eventAdded)  {
       navigate('/')
     }
   }, [loading, validate, eventAdded, navigate])

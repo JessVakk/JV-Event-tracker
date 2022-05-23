@@ -15,46 +15,6 @@
       "place": "Filmstaden Kista",
       "date": "3/6",
       "time": "18.00"
-    },
-    {
-      "title": "Kommer detta in på events-sidan?",
-      "place": "Hoppas det",
-      "date": "2022-05-19",
-      "time": "12:39",
-      "description": "håller tummarna",
-      "id": 3
-    },
-    {
-      "title": "Gick det att spara?",
-      "place": "förhoppningsvis",
-      "date": "2022-05-11",
-      "time": "21:10",
-      "description": "nytt",
-      "id": 4
-    },
-    {
-      "title": "Fira födelsedag",
-      "place": "test",
-      "date": "2022-05-12",
-      "time": "13:41",
-      "description": "håller tummarna",
-      "id": 5
-    },
-    {
-      "title": "",
-      "place": "",
-      "date": "",
-      "time": "",
-      "description": "",
-      "id": 6
-    },
-    {
-      "id": 7,
-      "title": "",
-      "place": "",
-      "date": "",
-      "time": "",
-      "description": ""
     }
   ],
   "users": [
