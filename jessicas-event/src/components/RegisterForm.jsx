@@ -13,7 +13,7 @@ const RegisterForm = ({setLogin}) => {
     lastName: '',
     email: '',
     password: '',
-    repeatPassword: ''
+    
   })
 
   const onChange = e => {
@@ -44,12 +44,10 @@ const RegisterForm = ({setLogin}) => {
           <div className="col-12 mb-4">
             <input value={formData.email} onChange={onChange} type="email" id='email' name='email' className='form-control' placeholder='Email:' />
           </div>
-          <div className="col-lg-6 col-sm-12 mb-4">
+          <div className="col-12 mb-4">
             <input value={formData.password} onChange={onChange} type="password" id='password' name='password' className='form-control' placeholder='Password:' />
           </div>
-          <div className="col-lg-6 col-sm-12 mb-4">
-            <input value={formData.repeatPassword} onChange={onChange} type="password" id='password' name='password' className='form-control' placeholder='Repeat Password:' />
-          </div>
+          
        
           <div>
             <button className='mb-4 btn btn-block btn-primary gradient-color text-light'>{loading ? 'Loading...' : 'Sign up'}</button>

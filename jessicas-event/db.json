@@ -5,50 +5,19 @@
       "title": "Födelsedagskalas",
       "description": "Fira fabian 4 år",
       "place": "Kalasgatan 54",
-      "date": "25/8",
+      "date": "2022-05-20",
       "time": "13.00"
-    },
-    {
-      "id": 2,
-      "title": "Bio",
-      "description": "Se Jurassic World",
-      "place": "Filmstaden Kista",
-      "date": "3/6",
-      "time": "18.00"
-    },
-    {
-      "id": 3,
-      "title": "test",
-      "description": "trete",
-      "place": "test",
-      "date": "2022-05-17",
-      "time": "15:35"
-    },
-    {
-      "id": 4,
-      "title": "Byta däck",
-      "description": "Byta till sommardäck.",
-      "place": "Håbo bilverkstad",
-      "date": "2022-05-26",
-      "time": "17:36"
-    }
+    }   
+    
   ],
   "users": [
     {
-      "email": "Hej@hej.se",
-      "password": "$2a$10$/wFnDH8hd5cuwB2BfoQVbe5tw0sb1YTmq7RrRiiM3hC6Zh8MueF9m",
-      "firstName": "Hej",
-      "lastName": "Hej",
-      "repeatPassword": "Hejsan",
-      "id": 1
-    },
-    {
       "email": "login@login.se",
-      "password": "$2a$10$QN60Panrmqje0onl1Ycn6.mE4udLyeWF0bcxf8X0PbHia7e.e5fXy",
+      "password": "$2a$10$4WXSXjQk7UaZ32cOCtXhMuf2.J3CYp/OGra8lzXkBeff9uyYq4iDe",
       "firstName": "Login",
       "lastName": "Login",
-      "repeatPassword": "Login",
       "id": 2
     }
+    
   ]
 }
