@@ -1,4 +1,4 @@
-import actiontypes from "../actiontypes";
+import actionTypes from "../actionTypes";
 import axios from 'axios'
 
 export const getEventById = (id) => {
@@ -17,25 +17,25 @@ export const getEventById = (id) => {
 
 const loadEvent = () => {
     return {
-        type: actiontypes().event.loadEvent
+        type: actionTypes().event.loadEvent
     }
 }
 
 const loadEventSuccess = (event) => {
     return {
-        type: actiontypes().event.loadEventSuccess,
+        type: actionTypes().event.loadEventSuccess,
         payload: event
     }
 }
 
 const loadEventFailure = (err) => {
     return {
-        type: actiontypes().event.loadEventFailure,
+        type: actionTypes().event.loadEventFailure,
         payload: err
     }
 }
 export const clearEvent = () => {
     return {
-        type: actiontypes().event.clearEvent
+        type: actionTypes().event.clearEvent
     }
 }

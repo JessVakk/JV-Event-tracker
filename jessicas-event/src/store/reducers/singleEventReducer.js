@@ -1,4 +1,4 @@
-import actiontypes from "../actiontypes";
+import actionTypes from "../actionTypes";
 
 const initState = {
     data: null,
@@ -9,13 +9,13 @@ const initState = {
 const singleEventReducer = (state = initState, action) => {
     switch(action.type) {
         
-        case actiontypes().event.loadEvent:
+        case actionTypes().event.loadEvent:
             return {
                 ...state,
                 loading: true
             }
         
-        case actiontypes().event.loadEventSuccess:
+        case actionTypes().event.loadEventSuccess:
             return {
                 ...state,
                 data: action.payload,
@@ -23,7 +23,7 @@ const singleEventReducer = (state = initState, action) => {
                 error: null
             }
 
-        case actiontypes().event.loadEventFailure:
+        case actionTypes().event.loadEventFailure:
             return {
                 ...state,
                 data: null,
@@ -31,7 +31,7 @@ const singleEventReducer = (state = initState, action) => {
                 error: action.payload
             }
         
-        case actiontypes().event.clearEvent:
+        case actionTypes().event.clearEvent:
             return {
                 ...state,
                 data: null,

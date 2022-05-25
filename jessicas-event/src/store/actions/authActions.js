@@ -1,5 +1,5 @@
 import axios from 'axios'
-import actiontypes from '../actiontypes'
+import actionTypes from '../actionTypes'
 // import jwt from 'jsonwebtoken'
 import jwt_decode from 'jwt-decode'
 
@@ -29,7 +29,7 @@ export const loginUser = user => {
 
 export const logoutUser = () => {
   return {
-    type: actiontypes().auth.logout
+    type: actionTypes().auth.logout
   }
 }
 
@@ -48,20 +48,20 @@ export const checkUser = () => {
 
 const loading = () => {
   return {
-    type: actiontypes().auth.loading
+    type: actionTypes().auth.loading
   }
 }
 
 const authFailure = (err) => {
   return {
-    type: actiontypes().auth.authFailure,
+    type: actionTypes().auth.authFailure,
     payload: err
   }
 }
 
 const authSuccess = token => {
   return {
-    type: actiontypes().auth.authSuccess,
+    type: actionTypes().auth.authSuccess,
     payload: token
   }
 }

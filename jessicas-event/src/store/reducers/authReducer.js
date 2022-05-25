@@ -1,4 +1,4 @@
-import actiontypes from "../actiontypes";
+import actionTypes from "../actionTypes";
 
 const initState = {
   token: null,
@@ -9,20 +9,20 @@ const initState = {
 const authReducer = (state = initState, action) => {
   switch(action.type) {
 
-    case actiontypes().auth.loading:
+    case actionTypes().auth.loading:
       return {
         ...state,
         loading: true
       }
 
-    case actiontypes().auth.authFailure:
+    case actionTypes().auth.authFailure:
       return {
         ...state,
         loading: false,
         error: action.payload
       }
 
-    case actiontypes().auth.authSuccess:
+    case actionTypes().auth.authSuccess:
       localStorage.setItem('token', action.payload)
       return {
         ...state,
@@ -31,7 +31,7 @@ const authReducer = (state = initState, action) => {
         token: action.payload
       }
 
-    case actiontypes().auth.logout:
+    case actionTypes().auth.logout:
       localStorage.removeItem('token')
       return {
         ...initState

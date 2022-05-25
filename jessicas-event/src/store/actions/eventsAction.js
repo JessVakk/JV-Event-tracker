@@ -1,5 +1,5 @@
 import axios from 'axios'
-import actiontypes from '../actiontypes'
+import actionTypes from '../actionTypes'
 
 export const getEvents = () => {
     return async dispatch => {
@@ -31,28 +31,28 @@ export const addEvent = (event) => {
 
 const addToList = (event) => {
     return {
-        type: actiontypes().events.addNewItem,
+        type: actionTypes().events.addNewItem,
         payload: event
     }
 }
 
 const loading = (payload) => {
     return {
-       type: actiontypes().events.loading,
+       type: actionTypes().events.loading,
        payload
     }
 }
 
 const setEvents = (events) => {
     return {
-        type: actiontypes().events.setEvents,
+        type: actionTypes().events.setEvents,
         payload: events
     }
 }
 
 const eventsFailure = (payload) => {
     return {
-        type: actiontypes().events.failure,
+        type: actionTypes().events.failure,
         payload
     }
 }

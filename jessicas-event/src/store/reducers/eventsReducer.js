@@ -1,4 +1,4 @@
-import actiontypes from "../actiontypes";
+import actionTypes from "../actionTypes";
 
 const initState = {
    data: [],
@@ -8,13 +8,13 @@ const initState = {
 
 const eventsReducer = (state = initState, action) => {
     switch(action.type) {
-        case actiontypes().events.loading:
+        case actionTypes().events.loading:
             return {
                 ...state,
                 loading: action.payload
             }
         
-        case actiontypes().events.setEvents:
+        case actionTypes().events.setEvents:
             return {
                 data: action.payload,
                 loading: false,
@@ -22,14 +22,14 @@ const eventsReducer = (state = initState, action) => {
                 
             }
 
-        case actiontypes().events.failure:
+        case actionTypes().events.failure:
             return {
                 data: [],
                 loading: false,
                 error: action.payload
             }
 
-        case actiontypes().events.addNewItem:
+        case actionTypes().events.addNewItem:
             return {
                 ...state,
                 data: [...state.data, action.payload],
