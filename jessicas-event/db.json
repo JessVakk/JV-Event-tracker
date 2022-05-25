@@ -1,23 +1,10 @@
 {
   "events": [
-    {
-      "id": 1,
-      "title": "Födelsedagskalas",
-      "description": "Fira fabian 4 år",
-      "place": "Kalasgatan 54",
-      "date": "2022-05-20",
-      "time": "13.00"
-    }   
+    
     
   ],
   "users": [
-    {
-      "email": "login@login.se",
-      "password": "$2a$10$4WXSXjQk7UaZ32cOCtXhMuf2.J3CYp/OGra8lzXkBeff9uyYq4iDe",
-      "firstName": "Login",
-      "lastName": "Login",
-      "id": 2
-    }
+  
     
   ]
 }
