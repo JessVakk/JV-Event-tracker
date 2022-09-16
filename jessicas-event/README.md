@@ -1,3 +1,14 @@
+# 
+## installera genom att skriva `npm install` 
+### starta upp med `npm start` 
+#### för att starta json-server-auth skriv 
+`json-server db.json -m ./node_modules/json-server-auth --port 8080`
+allt i mappen "event-tracker"
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
