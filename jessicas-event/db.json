@@ -7,6 +7,14 @@
       "place": "Skrapan Västerås",
       "date": "2023-04-12",
       "time": "16:00"
+    },
+    {
+      "id": 2,
+      "title": "bowling",
+      "description": "Hela gänget bowlar",
+      "place": "Bowlinghallen",
+      "date": "2022-12-17",
+      "time": "12:58"
     }
   ],
   "users": [
@@ -16,6 +24,13 @@
       "firstName": "testaren",
       "lastName": "testson",
       "id": 1
+    },
+    {
+      "email": "Hej@hej.se",
+      "password": "$2a$10$thnCaYf2Wxb.qrsnME86TucavF5ru7gscKffcj8Tg.TZrqNEklqGq",
+      "firstName": "Hej",
+      "lastName": "Hej",
+      "id": 2
     }
   ]
 }
