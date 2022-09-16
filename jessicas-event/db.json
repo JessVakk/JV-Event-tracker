@@ -1,10 +1,21 @@
 {
   "events": [
-    
-    
+    {
+      "id": 1,
+      "title": "After Work",
+      "description": "Meet up with students at Ec Utbildning",
+      "place": "Skrapan Västerås",
+      "date": "2023-04-12",
+      "time": "16:00"
+    }
   ],
   "users": [
-  
-    
+    {
+      "email": "testar@testet.se",
+      "password": "$2a$10$cZbyzXPQruPRqIuRrKpWUuBImDsOT2962q7IqZ.xpnxscqmaAK7Pa",
+      "firstName": "testaren",
+      "lastName": "testson",
+      "id": 1
+    }
   ]
 }
